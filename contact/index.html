@@ -77,30 +77,31 @@
                 <div class="container">
                     <script>
                         function onSubmit() {
-                          var data = JSON.stringify({
-                            "name": document.getElementById('name').value,
-                            "email": document.getElementById('email').value,
-                            "message": document.getElementById('message').value
-                        });
 
-                        var xhr = new XMLHttpRequest();
-                        xhr.withCredentials = true;
+                            var data = JSON.stringify({
+                                "name": document.getElementById('name').value,
+                                "email": document.getElementById('email').value,
+                                "message": document.getElementById('message').value
+                            });
 
-                        xhr.addEventListener("readystatechange", function() {
-                        if(this.readyState === 4) {
-                            console.log(this.responseText);
-                            alert('Sua mensagem foi enviada, te responderei assim que possível :)');
-                            this.location.href = 'https://www.caioruiz.com';
+                            var xhr = new XMLHttpRequest();
+                            xhr.withCredentials = true;
+
+                            xhr.addEventListener("readystatechange", function() {
+                            if(this.readyState === 4) {
+                                console.log(this.responseText);
+                                alert('Sua mensagem foi enviada, te responderei assim que possível :)');
+                                window.location.href = 'https://www.caioruiz.com';
+                            }
+                            });
+
+                            xhr.open("POST", "https://w77bz7cl4tsxsevmbinz3o3lca0dojtc.lambda-url.us-east-1.on.aws/");
+                            xhr.setRequestHeader("Content-Type", "application/json");
+
+                            xhr.send(data);
                         }
-                        });
-
-                        xhr.open("POST", "https://w77bz7cl4tsxsevmbinz3o3lca0dojtc.lambda-url.us-east-1.on.aws/");
-                        xhr.setRequestHeader("Content-Type", "application/json");
-
-                        xhr.send(data);
-                    }
                     </script>
-                    <form id="invisible-recaptcha-form" accept-charset="UTF-8" method="POST">
+                    <form id="invisible-recaptcha-form" accept-charset="UTF-8">
                         <div class="columns is-centered">
                             <div class="column is-half">
                                 <div class="field">
@@ -139,7 +140,7 @@
                             <div class="column is-one-third">
                                 <div class="field">
                                     <div class="control">
-                                        <button class="button is-primary is-outlined is-medium is-fullwidth is-rounded g-recaptcha" onclick="onSubmit()">Enviar</button>
+                                        <button class="button is-primary is-outlined is-medium is-fullwidth is-rounded g-recaptcha">Enviar</button>
                                     </div>
                                 </div>
                             </div>
@@ -148,5 +149,11 @@
                 </div>
             </section>
         </div>
+        <script>
+            document.getElementById('invisible-recaptcha-form').addEventListener("submit", function(evt) {
+                evt.preventDefault();
+                onSubmit();
+            }, true);
+        </script>
     </body>
 </html>
