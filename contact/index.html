@@ -76,7 +76,7 @@
             <section class="is-white">
                 <div class="container">
                     <script>
-                        function onSubmit(token) {
+                        function onSubmit() {
                           var data = JSON.stringify({
                             "name": document.getElementById('name').value,
                             "email": document.getElementById('email').value,
@@ -139,7 +139,7 @@
                             <div class="column is-one-third">
                                 <div class="field">
                                     <div class="control">
-                                        <button class="button is-primary is-outlined is-medium is-fullwidth is-rounded g-recaptcha" data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy" data-callback="onSubmit" data-badge="inline">Enviar</button>
+                                        <button class="button is-primary is-outlined is-medium is-fullwidth is-rounded g-recaptcha" onclick="onSubmit()">Enviar</button>
                                     </div>
                                 </div>
                             </div>
