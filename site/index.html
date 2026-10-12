@@ -91,8 +91,14 @@
     </section>
 
     <section id="projetos" class="section wrap">
-      <h2>Projetos</h2>
-      <div class="projects">
+      <div class="section-head">
+        <h2>Projetos</h2>
+        <div class="carousel-arrows" hidden>
+          <button type="button" class="carousel-btn" data-dir="-1" aria-label="Projeto anterior">←</button>
+          <button type="button" class="carousel-btn" data-dir="1" aria-label="Próximo projeto">→</button>
+        </div>
+      </div>
+      <div class="projects" tabindex="0" role="region" aria-label="Projetos">
         <article class="card">
           <div class="card-head">
             <h3>Calcula Lab</h3>
@@ -170,6 +176,7 @@
           <p class="note">Projeto de portfólio, sem fins comerciais. Não é recomendação de investimento.</p>
         </article>
       </div>
+      <div class="carousel-dots" hidden></div>
     </section>
 
 
@@ -195,5 +202,6 @@
       });
     });
   </script>
+  <script src="/carousel.js"></script>
 </body>
 </html>

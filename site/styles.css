@@ -102,7 +102,34 @@ h3 { font-size: 20px; margin: 0; letter-spacing: -.01em; }
 .facts dd { margin: 2px 0 0; }
 
 /* Projects */
-.projects { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.section-head { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 28px; }
+.section-head h2 { margin: 0; }
+
+/* Projetos: trilha horizontal com encaixe; sem JS continua rolando para o lado */
+.projects {
+  display: grid; grid-auto-flow: column; grid-auto-columns: calc((100% - 20px) / 2); gap: 20px;
+  overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth;
+  scrollbar-width: none; overscroll-behavior-x: contain;
+}
+.projects::-webkit-scrollbar { display: none; }
+.projects > .card { scroll-snap-align: start; }
+.projects:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; border-radius: var(--radius); }
+@media (prefers-reduced-motion: reduce) { .projects { scroll-behavior: auto; } }
+
+.carousel-arrows { display: flex; gap: 8px; }
+.carousel-arrows[hidden], .carousel-dots[hidden] { display: none; }
+.carousel-btn {
+  width: 38px; height: 38px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface);
+  color: var(--text); font: 500 16px/1 Inter, system-ui, sans-serif; cursor: pointer;
+}
+.carousel-btn:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
+.carousel-btn:disabled { opacity: .35; cursor: default; }
+.carousel-btn:focus-visible, .carousel-dots button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.carousel-dots { display: flex; justify-content: center; gap: 4px; margin-top: 16px; }
+.carousel-dots button { width: 24px; height: 24px; padding: 0; border: 0; background: none; cursor: pointer; display: grid; place-items: center; }
+.carousel-dots button::after { content: ""; width: 8px; height: 8px; border-radius: 999px; background: var(--line); transition: background .2s, width .2s; }
+.carousel-dots button[aria-current="true"]::after { background: var(--accent); width: 20px; }
 .card {
   background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
   padding: 26px; display: flex; flex-direction: column;
@@ -144,7 +171,8 @@ h3 { font-size: 20px; margin: 0; letter-spacing: -.01em; }
   .hero { padding: 64px 16px 48px; }
   .section { padding: 44px 16px; }
   .wrap { padding-left: 16px; padding-right: 16px; }
-  .about, .projects { grid-template-columns: 1fr; gap: 24px; }
+  .about { grid-template-columns: 1fr; gap: 24px; }
+  .projects { grid-auto-columns: 86%; gap: 14px; }
 }
 
 @media (max-width: 480px) {
