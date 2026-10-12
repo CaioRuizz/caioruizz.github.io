@@ -2,7 +2,7 @@
 
 Site pessoal: introdução, projetos, experiência e contatos. Publicado em https://www.caioruiz.com.
 
-HTML e CSS estáticos, sem build. Todo o conteúdo fica em `site/`.
+HTML e CSS estáticos, sem build. Todo o conteúdo fica em `site/`: português em `site/index.html` e inglês em `site/en/index.html`.
 
 ## Rodar localmente
 

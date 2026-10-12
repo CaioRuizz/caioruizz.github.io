@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Caio Ruiz — Indices, data and financial products</title>
+  <meta name="description" content="Caio Ruiz, Product Analyst on the Indices team at B3, the Brazilian stock exchange. Computer engineer with a background in product research, software engineering and data engineering.">
+  <meta property="og:title" content="Caio Ruiz">
+  <meta property="og:description" content="Product Analyst on the Indices team at B3. Indices, data and Python.">
+  <meta property="og:url" content="https://www.caioruiz.com/en/">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://www.caioruiz.com/en/">
+  <link rel="alternate" hreflang="pt-BR" href="https://www.caioruiz.com/">
+  <link rel="alternate" hreflang="en" href="https://www.caioruiz.com/en/">
+  <link rel="alternate" hreflang="x-default" href="https://www.caioruiz.com/">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="#home">caio<span>ruiz</span></a>
+      <nav aria-label="Sections">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a class="lang" href="../" hreflang="pt-BR" lang="pt-BR" title="Versão em português">PT</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero wrap">
+      <p class="eyebrow">Product Analyst · Indices · B3</p>
+      <h1>Hi, I'm Caio Ruiz.</h1>
+      <p class="lead">
+        I work on the Indices team at B3, the Brazilian stock exchange, building and maintaining stock, commodity and
+        currency indices. I'm a computer engineer and have worked in product research, software engineering and data
+        engineering, always close to the financial markets.
+      </p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#projects">See projects</a>
+        <a class="btn" href="mailto:contato@caioruiz.com">contato@caioruiz.com</a>
+      </div>
+      <ul class="social" aria-label="Social">
+        <li><a href="https://www.linkedin.com/in/caio-henrique-ventura-ruiz" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/caioruizz" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+    </section>
+
+    <section id="about" class="section wrap">
+      <h2>About</h2>
+      <div class="about">
+        <div>
+          <p>
+            I'm a Product Analyst at <strong>B3</strong>, where I research and develop stock indices (broad and
+            sectoral), commodity indices and currency indices, write methodologies, run backtests in Python and work
+            with clients who request custom indices.
+          </p>
+          <p>
+            Outside of work, I like building small, useful products, which you'll find below.
+          </p>
+        </div>
+        <dl class="facts">
+          <div><dt>Areas</dt><dd>Indices, stocks, stock derivatives, commodities and currencies, ETFs, AI products</dd></div>
+          <div><dt>Tools</dt><dd>Python, SQL, Databricks, AWS</dd></div>
+          <div><dt>Education</dt><dd>B.Sc. in Computer Engineering, Faculdade Engenheiro Salvador Arena (2019–2024)</dd></div>
+          <div><dt>Languages</dt><dd>Portuguese, English and Spanish</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section id="projects" class="section wrap">
+      <h2>Projects</h2>
+      <div class="projects">
+        <article class="card">
+          <div class="card-head">
+            <h3>Calcula Lab</h3>
+            <span class="tag tag-live">Live</span>
+          </div>
+          <p class="card-tagline">Calculators that show the math, not just the result.</p>
+          <p>
+            Practical calculators for two niches: homelab and baking. You enter your own numbers and each calculator
+            shows the formula and assumptions behind the result. No sign-up, no cookies and nothing to sell.
+            The site is in Portuguese.
+          </p>
+          <ul class="list">
+            <li><strong>Homelab:</strong> 24/7 power cost, UPS sizing, usable RAID/RAIDZ/SHR capacity, storage for security cameras (DVR/NVR), home server vs. cloud</li>
+            <li><strong>Baking:</strong> cake and pastry pricing (cost per gram, labor and margin)</li>
+          </ul>
+          <a class="card-link" href="https://calculalab.com.br" target="_blank" rel="noopener">calculalab.com.br →</a>
+        </article>
+
+        <article class="card">
+          <div class="card-head">
+            <h3>Painel ETF</h3>
+            <span class="tag tag-wip">In development</span>
+          </div>
+          <p class="card-tagline">A research platform for ETFs listed on B3.</p>
+          <p>
+            Brings together prices since 2018, holdings, distributions, costs and data from the Central Bank of Brazil,
+            the National Treasury, CVM and the SEC to answer questions like: how much do two ETFs overlap? Which ETFs
+            hold a given stock? What are the risk, return and cost of each one?
+          </p>
+          <ul class="list">
+            <li><strong>Data:</strong> scheduled daily ingestion, backups with tested restores and alerting</li>
+            <li><strong>Analytics:</strong> overlap by asset, issuer and look-through, Stock Locator, return, risk, correlation, aggregated fundamentals and costs</li>
+          </ul>
+          <div class="progress" aria-label="Project progress">
+            <span class="done">Data</span>
+            <span class="done">Analytics</span>
+            <span class="now">API</span>
+            <span>Frontend</span>
+            <span>Portfolios</span>
+            <span>Production</span>
+          </div>
+          <p class="note">Non-commercial portfolio project. Not investment advice.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section wrap contact">
+      <h2>Contact</h2>
+      <p>Up for a coffee? Send me a message.</p>
+      <ul class="contact-list">
+        <li><span>Email</span><a href="mailto:contato@caioruiz.com">contato@caioruiz.com</a></li>
+        <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/caio-henrique-ventura-ruiz" target="_blank" rel="noopener">caio-henrique-ventura-ruiz</a></li>
+        <li><span>GitHub</span><a href="https://github.com/caioruizz" target="_blank" rel="noopener">caioruizz</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <p>© <span id="year">2026</span> Caio Ruiz · São Paulo, Brazil</p>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

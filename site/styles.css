@@ -58,6 +58,11 @@ a:hover { text-decoration: underline; }
 nav { display: flex; gap: 22px; }
 nav a { color: var(--muted); font-size: 15px; font-weight: 500; }
 nav a:hover { color: var(--text); text-decoration: none; }
+nav .lang {
+  font: 500 12px "JetBrains Mono", ui-monospace, monospace;
+  border: 1px solid var(--line); border-radius: 6px; padding: 2px 7px; align-self: center;
+}
+nav .lang:hover { border-color: var(--accent); color: var(--accent); }
 
 /* Hero */
 .hero { padding: 96px 20px 72px; }
