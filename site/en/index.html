@@ -27,8 +27,11 @@
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
-        <a class="lang" href="../" hreflang="pt-BR" lang="pt-BR" title="Versão em português">PT</a>
       </nav>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <a href="../" lang="pt-BR" hreflang="pt-BR" data-lang="pt" title="Português">PT</a>
+        <a href="./" lang="en" hreflang="en" data-lang="en" aria-current="page">EN</a>
+      </div>
     </div>
   </header>
 
@@ -137,5 +140,12 @@
     <p>© <span id="year">2026</span> Caio Ruiz · São Paulo, Brazil</p>
   </footer>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script>
+    document.querySelectorAll('[data-lang]').forEach(function (a) {
+      a.addEventListener('click', function () {
+        try { localStorage.setItem('lang', a.dataset.lang); } catch (e) {}
+      });
+    });
+  </script>
 </body>
 </html>
