@@ -4,7 +4,15 @@ on:
   push:
     branches:
       - main
+  schedule:
+    # Painel macro: atualiza os dados do Banco Central em dias úteis, de manhã (CDI do dia anterior)
+    # e à noite (PTAX do dia). Horários em UTC: 08:13 e 19:13 em Brasília.
+    - cron: "13 11,22 * * 1-5"
   workflow_dispatch:
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
 
 jobs:
   deploy:
@@ -14,9 +22,18 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch macro data
+        run: python scripts/fetch_macro.py
+
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           token: ${{ secrets.GH_TOKEN }}
           branch: gh-pages
           folder: site
+          single-commit: true

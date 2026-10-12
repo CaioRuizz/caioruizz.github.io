@@ -1,1 +1,4 @@
 .DS_Store
+
+# Gerado no deploy por scripts/fetch_macro.py
+site/macro/data.json
