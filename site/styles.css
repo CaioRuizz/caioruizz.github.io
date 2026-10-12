@@ -117,20 +117,6 @@ h3 { font-size: 20px; margin: 0; letter-spacing: -.01em; }
 .progress .done { border: 1px solid var(--accent-soft); background: var(--accent-soft); color: var(--accent); }
 .progress .now { border: 1px solid var(--warn); color: var(--warn); }
 
-/* Timeline */
-.timeline { list-style: none; margin: 0; padding: 0; }
-.timeline > li {
-  display: grid; grid-template-columns: 160px 1fr; gap: 24px;
-  padding: 0 0 28px; position: relative;
-}
-.when { font: 500 13px/1.9 "JetBrains Mono", ui-monospace, monospace; color: var(--muted); }
-.what h3 { font-size: 17px; }
-.what h3 span { color: var(--muted); font-weight: 500; }
-.what ul { margin: 6px 0 0; padding-left: 18px; color: var(--muted); font-size: 15px; }
-.what li { margin-bottom: 3px; }
-.certs { font-size: 15px; color: var(--muted); margin: 8px 0 0; }
-.certs strong { color: var(--text); }
-
 /* Contact */
 .contact > p { margin: 0 0 20px; font-size: 18px; }
 .contact-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
@@ -150,7 +136,6 @@ h3 { font-size: 20px; margin: 0; letter-spacing: -.01em; }
   .section { padding: 44px 16px; }
   .wrap { padding-left: 16px; padding-right: 16px; }
   .about, .projects { grid-template-columns: 1fr; gap: 24px; }
-  .timeline > li { grid-template-columns: 1fr; gap: 2px; }
 }
 
 @media (max-width: 480px) {
