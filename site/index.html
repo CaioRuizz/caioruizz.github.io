@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Caio Ruiz — Índices, dados e produtos financeiros</title>
+  <meta name="description" content="Caio Ruiz, Product Analyst no time de Índices da B3. Engenheiro de computação com experiência em pesquisa de produtos, engenharia de software e engenharia de dados.">
+  <meta property="og:title" content="Caio Ruiz">
+  <meta property="og:description" content="Product Analyst no time de Índices da B3. Índices, dados e Python.">
+  <meta property="og:url" content="https://www.caioruiz.com/">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://www.caioruiz.com/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="#inicio">caio<span>ruiz</span></a>
+      <nav aria-label="Seções">
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero wrap">
+      <p class="eyebrow">Product Analyst · Índices · B3</p>
+      <h1>Olá, eu sou o Caio Ruiz.</h1>
+      <p class="lead">
+        Trabalho no time de Índices da B3 construindo e mantendo índices de ações, commodities e moedas.
+        Sou engenheiro de computação e passei por pesquisa de produtos, engenharia de software e engenharia de dados,
+        sempre perto do mercado financeiro.
+      </p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#projetos">Ver projetos</a>
+        <a class="btn" href="mailto:contato@caioruiz.com">contato@caioruiz.com</a>
+      </div>
+      <ul class="social" aria-label="Redes">
+        <li><a href="https://www.linkedin.com/in/caio-henriqueventura-ruiz" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/caioruizz" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+    </section>
+
+    <section id="sobre" class="section wrap">
+      <h2>Sobre</h2>
+      <div class="about">
+        <div>
+          <p>
+            Hoje sou Product Analyst na <strong>B3</strong>, onde faço pesquisa e desenvolvimento de índices amplos,
+            setoriais e QIS, escrevo metodologias, rodo backtests em Python e atendo clientes que pedem índices sob demanda.
+          </p>
+          <p>
+            Antes disso, na <strong>GFT Technologies</strong>, migrei o motor de cálculo de índices de um sistema legado
+            para o Databricks, estruturei um data lakehouse de dados de mercado e construí um motor de backtesting para
+            índices de ações, commodities e moedas.
+          </p>
+          <p>
+            Fora do trabalho, gosto de construir produtos pequenos e úteis, que você encontra logo abaixo.
+          </p>
+        </div>
+        <dl class="facts">
+          <div><dt>Áreas</dt><dd>Índices, ações, derivativos de ações, commodities e moedas, ETFs, produtos com IA</dd></div>
+          <div><dt>Ferramentas</dt><dd>Python, SQL, Databricks, AWS</dd></div>
+          <div><dt>Formação</dt><dd>Engenharia de Computação, Faculdade Engenheiro Salvador Arena (2019–2024)</dd></div>
+          <div><dt>Idiomas</dt><dd>Português, inglês e espanhol</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section id="projetos" class="section wrap">
+      <h2>Projetos</h2>
+      <div class="projects">
+        <article class="card">
+          <div class="card-head">
+            <h3>Calcula Lab</h3>
+            <span class="tag tag-live">No ar</span>
+          </div>
+          <p class="card-tagline">Calculadoras que mostram a conta, não só o resultado.</p>
+          <p>
+            Calculadoras práticas para dois nichos: homelab e confeitaria. Você coloca os seus números e cada
+            calculadora mostra a fórmula e as premissas usadas. Sem cadastro, sem cookies e sem nada para vender.
+          </p>
+          <ul class="list">
+            <li><strong>Homelab:</strong> custo de energia 24 h, dimensionamento de nobreak, capacidade útil de RAID/RAIDZ/SHR, disco para câmeras (DVR/NVR), servidor em casa vs. nuvem</li>
+            <li><strong>Confeitaria:</strong> preço de bolo e doce (custo por grama, mão de obra e margem)</li>
+          </ul>
+          <a class="card-link" href="https://calculalab.com.br" target="_blank" rel="noopener">calculalab.com.br →</a>
+        </article>
+
+        <article class="card">
+          <div class="card-head">
+            <h3>Painel ETF</h3>
+            <span class="tag tag-wip">Em desenvolvimento</span>
+          </div>
+          <p class="card-tagline">Plataforma de pesquisa de ETFs listados na B3.</p>
+          <p>
+            Reúne preços desde 2018, carteiras, proventos, custos e dados de BCB, Tesouro, CVM e SEC para responder
+            perguntas como: quanto dois ETFs se sobrepõem? Quais ETFs têm uma determinada ação? Qual o risco, o retorno
+            e o custo de cada um?
+          </p>
+          <ul class="list">
+            <li><strong>Dados:</strong> ingestão diária com agendador, backup com restauração testada e alertas</li>
+            <li><strong>Analytics:</strong> sobreposição por ativo, emissor e look-through, Stock Locator, retorno, risco, correlação, fundamentos agregados e custos</li>
+            <li><strong>Stack:</strong> Python, FastAPI, SvelteKit, TypeScript, Docker, Playwright</li>
+          </ul>
+          <div class="progress" aria-label="Andamento do projeto">
+            <span class="done">Dados</span>
+            <span class="done">Analytics</span>
+            <span class="now">API</span>
+            <span>Frontend</span>
+            <span>Carteiras</span>
+            <span>Produção</span>
+          </div>
+          <p class="note">Projeto de portfólio, sem fins comerciais. Não é recomendação de investimento.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="experiencia" class="section wrap">
+      <h2>Experiência</h2>
+      <ol class="timeline">
+        <li>
+          <div class="when">out 2025 – atual</div>
+          <div class="what">
+            <h3>Product Analyst <span>· B3</span></h3>
+            <ul>
+              <li>Pesquisa e desenvolvimento de índices amplos, setoriais e QIS</li>
+              <li>Relacionamento com clientes para desenvolver índices sob demanda</li>
+              <li>Revisão e manutenção dos índices em produção e autoria de metodologias</li>
+              <li>Backtesting de estratégias em Python</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="when">jan 2023 – out 2025</div>
+          <div class="what">
+            <h3>Senior Data Engineer / Data Engineer <span>· GFT Technologies</span></h3>
+            <ul>
+              <li>Motor de backtesting para índices de ações, commodities e moedas</li>
+              <li>Migração do motor de cálculo de índices de um sistema legado para o Databricks</li>
+              <li>Data lakehouse de dados de mercado para cálculo de índices e backtesting</li>
+              <li>Levantamento de dados e benchmarking para uma nova política comercial</li>
+              <li>Bibliotecas analíticas e componentes reutilizáveis para pesquisa de índices</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="when">set 2022 – dez 2022</div>
+          <div class="what">
+            <h3>Software Engineer <span>· GFT Technologies</span></h3>
+            <ul>
+              <li>Melhorias no Informe de Rendimentos para clientes pessoa física</li>
+              <li>Migração de dados e infraestrutura de MySQL para Aurora</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="when">mai 2022 – set 2022</div>
+          <div class="what">
+            <h3>Data Analyst <span>· Nahas Sociedade de Advogados</span></h3>
+            <ul>
+              <li>Dashboards e relatórios para acompanhamento de processos e automação de rotinas manuais</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="when">set 2021 – mai 2022</div>
+          <div class="what">
+            <h3>Software Engineer <span>· Itaú Unibanco</span></h3>
+            <ul>
+              <li>Dashboard integrado para simplificar o trabalho operacional e automações para reduzir risco operacional</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="when">jul 2020 – ago 2021</div>
+          <div class="what">
+            <h3>Software Engineer <span>· SUTHUB</span></h3>
+            <ul>
+              <li>Robôs de cotação com seguradoras parceiras, extração de dados contábeis e pipelines de CI/CD</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="when">dez 2019 – jun 2020</div>
+          <div class="what">
+            <h3>Estagiário de Engenharia de Software <span>· Angoera Sistemas Eletrônicos</span></h3>
+            <ul>
+              <li>Modelos de visão computacional para detectar uso de máscara e para monitorar despensas automaticamente</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+      <p class="certs"><strong>Certificações:</strong> AWS Cloud Practitioner · Data Science Fundamentals · Intro to Machine Learning · Intro to Deep Learning · Balanced Scorecard e KPIs</p>
+    </section>
+
+    <section id="contato" class="section wrap contact">
+      <h2>Contato</h2>
+      <p>Quer conversar sobre índices, dados ou algum dos projetos? Manda uma mensagem.</p>
+      <ul class="contact-list">
+        <li><span>E-mail</span><a href="mailto:contato@caioruiz.com">contato@caioruiz.com</a></li>
+        <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/caio-henriqueventura-ruiz" target="_blank" rel="noopener">caio-henriqueventura-ruiz</a></li>
+        <li><span>GitHub</span><a href="https://github.com/caioruizz" target="_blank" rel="noopener">caioruizz</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <p>© <span id="ano">2026</span> Caio Ruiz · São Paulo, Brasil</p>
+  </footer>
+  <script>document.getElementById('ano').textContent = new Date().getFullYear();</script>
+</body>
+</html>
