@@ -85,6 +85,48 @@
       }
     },
     {
+      "id": "focus",
+      "status": "live",
+      "pt": {
+        "title": "Focus ao longo do tempo",
+        "tagline": "As expectativas do mercado, semana a semana.",
+        "description": "O Relatório Focus mostra o que o mercado espera para a economia só na semana atual. Aqui dá para ver como cada expectativa para IPCA, Selic, PIB e câmbio mudou desde a primeira projeção, comparada com o que de fato aconteceu.",
+        "bullets": [
+          {
+            "label": "Dados",
+            "text": "API de expectativas do Banco Central desde 2012, atualizada todo dia útil"
+          },
+          {
+            "label": "Gráficos",
+            "text": "mediana, menor e maior projeção e valor realizado para cada ano"
+          }
+        ],
+        "link": {
+          "href": "https://focus.caioruiz.com",
+          "label": "focus.caioruiz.com"
+        }
+      },
+      "en": {
+        "title": "Focus over time",
+        "tagline": "Market expectations, week by week.",
+        "description": "The Central Bank’s Focus survey only shows this week’s market expectations. This site shows how each forecast for inflation, the Selic rate, GDP and the dollar changed since the first projection, compared with what actually happened. The site is in Portuguese.",
+        "bullets": [
+          {
+            "label": "Data",
+            "text": "Central Bank expectations API since 2012, updated every business day"
+          },
+          {
+            "label": "Charts",
+            "text": "median, lowest and highest forecast and the realized value for each year"
+          }
+        ],
+        "link": {
+          "href": "https://focus.caioruiz.com",
+          "label": "focus.caioruiz.com"
+        }
+      }
+    },
+    {
       "id": "ruiz-app-store",
       "status": "opensource",
       "pt": {
@@ -181,17 +223,6 @@
     }
   ],
   "backlog": [
-    {
-      "next": true,
-      "pt": {
-        "title": "Focus ao longo do tempo",
-        "description": "Como as expectativas do mercado para IPCA, Selic, PIB e câmbio mudam semana a semana no Relatório Focus."
-      },
-      "en": {
-        "title": "Focus over time",
-        "description": "How market expectations for inflation, the Selic rate, GDP and the dollar change week by week in the Central Bank’s Focus survey."
-      }
-    },
     {
       "next": false,
       "pt": {
