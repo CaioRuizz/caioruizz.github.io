@@ -32,8 +32,10 @@ e abra http://localhost:8000.
 
 ## Deploy
 
-Todo push na `main` publica a pasta `site/` na branch `gh-pages`
-(workflow em `.github/workflows/deploy-pages.yml`). O domínio vem de `site/CNAME`.
+Todo push na `main` publica a pasta `site/` no GitHub Pages pelas actions oficiais (`upload-pages-artifact` e
+`deploy-pages`), com o token temporário do próprio workflow; não há secret nem branch `gh-pages`
+(workflow em `.github/workflows/deploy-pages.yml`). Em **Settings → Pages**, a origem é **GitHub Actions** e o
+domínio personalizado é `www.caioruiz.com`.
 
 O deploy também roda em dias úteis às 08:13 e 19:13 (horário de Brasília) para atualizar o painel macro
 (`/macro/`): `scripts/fetch_macro.py` busca as séries no SGS do Banco Central antes de publicar. Se a API
