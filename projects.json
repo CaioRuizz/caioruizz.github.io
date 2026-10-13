@@ -1,44 +1,44 @@
 {
   "projects": [
     {
-      "id": "calculalab",
+      "id": "focus",
       "status": "live",
       "pt": {
-        "title": "Calcula Lab",
-        "tagline": "Calculadoras que mostram a conta, não só o resultado.",
-        "description": "Calculadoras práticas para dois nichos: homelab e confeitaria. Você coloca os seus números e cada calculadora mostra a fórmula e as premissas usadas. Sem cadastro, sem cookies e sem nada para vender.",
+        "title": "Focus ao longo do tempo",
+        "tagline": "As expectativas do mercado, semana a semana.",
+        "description": "O Relatório Focus mostra o que o mercado espera para a economia só na semana atual. Aqui dá para ver como cada expectativa para IPCA, Selic, PIB e câmbio mudou desde a primeira projeção, comparada com o que de fato aconteceu.",
         "bullets": [
           {
-            "label": "Homelab",
-            "text": "custo de energia 24 h, dimensionamento de nobreak, capacidade útil de RAID/RAIDZ/SHR, disco para câmeras (DVR/NVR), servidor em casa vs. nuvem"
+            "label": "Dados",
+            "text": "API de expectativas do Banco Central desde 2012, atualizada todo dia útil"
           },
           {
-            "label": "Confeitaria",
-            "text": "preço de bolo e doce (custo por grama, mão de obra e margem)"
+            "label": "Gráficos",
+            "text": "mediana, menor e maior projeção e valor realizado para cada ano"
           }
         ],
         "link": {
-          "href": "https://calculalab.com.br",
-          "label": "calculalab.com.br"
+          "href": "https://focus.caioruiz.com",
+          "label": "focus.caioruiz.com"
         }
       },
       "en": {
-        "title": "Calcula Lab",
-        "tagline": "Calculators that show the math, not just the result.",
-        "description": "Practical calculators for two niches: homelab and baking. You enter your own numbers and each calculator shows the formula and assumptions behind the result. No sign-up, no cookies and nothing to sell. The site is in Portuguese.",
+        "title": "Focus over time",
+        "tagline": "Market expectations, week by week.",
+        "description": "The Central Bank’s Focus survey only shows this week’s market expectations. This site shows how each forecast for inflation, the Selic rate, GDP and the dollar changed since the first projection, compared with what actually happened. The site is in Portuguese.",
         "bullets": [
           {
-            "label": "Homelab",
-            "text": "24/7 power cost, UPS sizing, usable RAID/RAIDZ/SHR capacity, storage for security cameras (DVR/NVR), home server vs. cloud"
+            "label": "Data",
+            "text": "Central Bank expectations API since 2012, updated every business day"
           },
           {
-            "label": "Baking",
-            "text": "cake and pastry pricing (cost per gram, labor and margin)"
+            "label": "Charts",
+            "text": "median, lowest and highest forecast and the realized value for each year"
           }
         ],
         "link": {
-          "href": "https://calculalab.com.br",
-          "label": "calculalab.com.br"
+          "href": "https://focus.caioruiz.com",
+          "label": "focus.caioruiz.com"
         }
       }
     },
@@ -85,44 +85,44 @@
       }
     },
     {
-      "id": "focus",
+      "id": "calculalab",
       "status": "live",
       "pt": {
-        "title": "Focus ao longo do tempo",
-        "tagline": "As expectativas do mercado, semana a semana.",
-        "description": "O Relatório Focus mostra o que o mercado espera para a economia só na semana atual. Aqui dá para ver como cada expectativa para IPCA, Selic, PIB e câmbio mudou desde a primeira projeção, comparada com o que de fato aconteceu.",
+        "title": "Calcula Lab",
+        "tagline": "Calculadoras que mostram a conta, não só o resultado.",
+        "description": "Calculadoras práticas para dois nichos: homelab e confeitaria. Você coloca os seus números e cada calculadora mostra a fórmula e as premissas usadas. Sem cadastro, sem cookies e sem nada para vender.",
         "bullets": [
           {
-            "label": "Dados",
-            "text": "API de expectativas do Banco Central desde 2012, atualizada todo dia útil"
+            "label": "Homelab",
+            "text": "custo de energia 24 h, dimensionamento de nobreak, capacidade útil de RAID/RAIDZ/SHR, disco para câmeras (DVR/NVR), servidor em casa vs. nuvem"
           },
           {
-            "label": "Gráficos",
-            "text": "mediana, menor e maior projeção e valor realizado para cada ano"
+            "label": "Confeitaria",
+            "text": "preço de bolo e doce (custo por grama, mão de obra e margem)"
           }
         ],
         "link": {
-          "href": "https://focus.caioruiz.com",
-          "label": "focus.caioruiz.com"
+          "href": "https://calculalab.com.br",
+          "label": "calculalab.com.br"
         }
       },
       "en": {
-        "title": "Focus over time",
-        "tagline": "Market expectations, week by week.",
-        "description": "The Central Bank’s Focus survey only shows this week’s market expectations. This site shows how each forecast for inflation, the Selic rate, GDP and the dollar changed since the first projection, compared with what actually happened. The site is in Portuguese.",
+        "title": "Calcula Lab",
+        "tagline": "Calculators that show the math, not just the result.",
+        "description": "Practical calculators for two niches: homelab and baking. You enter your own numbers and each calculator shows the formula and assumptions behind the result. No sign-up, no cookies and nothing to sell. The site is in Portuguese.",
         "bullets": [
           {
-            "label": "Data",
-            "text": "Central Bank expectations API since 2012, updated every business day"
+            "label": "Homelab",
+            "text": "24/7 power cost, UPS sizing, usable RAID/RAIDZ/SHR capacity, storage for security cameras (DVR/NVR), home server vs. cloud"
           },
           {
-            "label": "Charts",
-            "text": "median, lowest and highest forecast and the realized value for each year"
+            "label": "Baking",
+            "text": "cake and pastry pricing (cost per gram, labor and margin)"
           }
         ],
         "link": {
-          "href": "https://focus.caioruiz.com",
-          "label": "focus.caioruiz.com"
+          "href": "https://calculalab.com.br",
+          "label": "calculalab.com.br"
         }
       }
     },
