@@ -131,16 +131,12 @@ h3 { font-size: 20px; margin: 0; letter-spacing: -.01em; }
 .carousel-dots button::after { content: ""; width: 8px; height: 8px; border-radius: 999px; background: var(--line); transition: background .2s, width .2s; }
 .carousel-dots button[aria-current="true"]::after { background: var(--accent); width: 20px; }
 
-.backlog { margin-top: 36px; }
-.backlog-title {
-  font: 500 13px "JetBrains Mono", ui-monospace, monospace; text-transform: uppercase; letter-spacing: .08em;
-  color: var(--muted); margin: 0 0 14px;
-}
-.backlog-list { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-.backlog-list li { border: 1px dashed var(--line); border-radius: var(--radius); padding: 14px 18px; }
+.card.card-backlog { border-style: dashed; background: transparent; }
+.backlog-list { list-style: none; padding: 0; margin: 10px 0 0; display: grid; gap: 14px; }
+.backlog-list li + li { border-top: 1px solid var(--line); padding-top: 14px; }
 .backlog-head { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
 .backlog-head strong { font-size: 15px; }
-.backlog-list p { margin: 4px 0 0; font-size: 14px; color: var(--muted); }
+.backlog-list p { margin: 4px 0 0 !important; font-size: 14px; color: var(--muted); }
 .card {
   background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
   padding: 26px; display: flex; flex-direction: column;
@@ -184,7 +180,6 @@ h3 { font-size: 20px; margin: 0; letter-spacing: -.01em; }
   .wrap { padding-left: 16px; padding-right: 16px; }
   .about { grid-template-columns: 1fr; gap: 24px; }
   .projects { grid-auto-columns: 86%; gap: 14px; }
-  .backlog-list { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 480px) {

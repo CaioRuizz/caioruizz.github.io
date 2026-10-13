@@ -1,0 +1,229 @@
+{
+  "projects": [
+    {
+      "id": "calculalab",
+      "status": "live",
+      "pt": {
+        "title": "Calcula Lab",
+        "tagline": "Calculadoras que mostram a conta, não só o resultado.",
+        "description": "Calculadoras práticas para dois nichos: homelab e confeitaria. Você coloca os seus números e cada calculadora mostra a fórmula e as premissas usadas. Sem cadastro, sem cookies e sem nada para vender.",
+        "bullets": [
+          {
+            "label": "Homelab",
+            "text": "custo de energia 24 h, dimensionamento de nobreak, capacidade útil de RAID/RAIDZ/SHR, disco para câmeras (DVR/NVR), servidor em casa vs. nuvem"
+          },
+          {
+            "label": "Confeitaria",
+            "text": "preço de bolo e doce (custo por grama, mão de obra e margem)"
+          }
+        ],
+        "link": {
+          "href": "https://calculalab.com.br",
+          "label": "calculalab.com.br"
+        }
+      },
+      "en": {
+        "title": "Calcula Lab",
+        "tagline": "Calculators that show the math, not just the result.",
+        "description": "Practical calculators for two niches: homelab and baking. You enter your own numbers and each calculator shows the formula and assumptions behind the result. No sign-up, no cookies and nothing to sell. The site is in Portuguese.",
+        "bullets": [
+          {
+            "label": "Homelab",
+            "text": "24/7 power cost, UPS sizing, usable RAID/RAIDZ/SHR capacity, storage for security cameras (DVR/NVR), home server vs. cloud"
+          },
+          {
+            "label": "Baking",
+            "text": "cake and pastry pricing (cost per gram, labor and margin)"
+          }
+        ],
+        "link": {
+          "href": "https://calculalab.com.br",
+          "label": "calculalab.com.br"
+        }
+      }
+    },
+    {
+      "id": "macro",
+      "status": "live",
+      "pt": {
+        "title": "Painel macro",
+        "tagline": "Os principais indicadores da economia brasileira num lugar só.",
+        "description": "Selic, CDI, IPCA, juro real e dólar com dados do Banco Central, atualizados todo dia útil. Cada indicador mostra a conta usada e o código da série de origem.",
+        "bullets": [
+          {
+            "label": "Gráficos",
+            "text": "1, 2 ou 5 anos, com o valor de cada dia ao passar o mouse"
+          },
+          {
+            "label": "Dados",
+            "text": "tabela com o fechamento de cada mês"
+          }
+        ],
+        "link": {
+          "href": "macro/",
+          "label": "caioruiz.com/macro"
+        }
+      },
+      "en": {
+        "title": "Brazil macro dashboard",
+        "tagline": "The main indicators of the Brazilian economy in one place.",
+        "description": "Selic, CDI, IPCA, real interest rate and the dollar, with Central Bank of Brazil data updated every business day. Each indicator shows the math behind it and its source series.",
+        "bullets": [
+          {
+            "label": "Charts",
+            "text": "1, 2 or 5 years, with each day's value on hover"
+          },
+          {
+            "label": "Data",
+            "text": "a table with month-end values"
+          }
+        ],
+        "link": {
+          "href": "macro/",
+          "label": "caioruiz.com/en/macro"
+        }
+      }
+    },
+    {
+      "id": "ruiz-app-store",
+      "status": "opensource",
+      "pt": {
+        "title": "Ruiz App Store",
+        "tagline": "Loja de apps para o Umbrel, o sistema de servidor caseiro.",
+        "description": "Uma loja comunitária para o umbrelOS com apps que desenvolvi. Basta adicionar a URL do repositório no Umbrel para instalar qualquer um deles com um clique.",
+        "bullets": [
+          {
+            "label": "Claude Server",
+            "text": "roda o Claude Code no servidor e controla tudo pelo navegador, de qualquer dispositivo. As sessões continuam rodando quando você desconecta, como um tmux na web"
+          },
+          {
+            "label": "Gitea Runner",
+            "text": "runner self-hosted de CI/CD para o Gitea Actions, com várias instâncias, start/stop e logs ao vivo pela interface web"
+          }
+        ],
+        "link": {
+          "href": "https://github.com/CaioRuizz/ruiz-app-store",
+          "label": "github.com/CaioRuizz/ruiz-app-store"
+        }
+      },
+      "en": {
+        "title": "Ruiz App Store",
+        "tagline": "An app store for Umbrel, the home server OS.",
+        "description": "A community app store for umbrelOS with apps I built. Add the repository URL in Umbrel and install any of them with one click.",
+        "bullets": [
+          {
+            "label": "Claude Server",
+            "text": "runs Claude Code on your server and lets you drive it from a browser on any device. Sessions keep running when you disconnect, like tmux on the web"
+          },
+          {
+            "label": "Gitea Runner",
+            "text": "a self-hosted CI/CD runner for Gitea Actions, with multiple instances, start/stop and live logs from a web UI"
+          }
+        ],
+        "link": {
+          "href": "https://github.com/CaioRuizz/ruiz-app-store",
+          "label": "github.com/CaioRuizz/ruiz-app-store"
+        }
+      }
+    },
+    {
+      "id": "painel-etf",
+      "status": "wip",
+      "progress_done": 2,
+      "pt": {
+        "title": "Painel ETF",
+        "tagline": "Plataforma de pesquisa de ETFs listados na B3.",
+        "description": "Reúne preços desde 2018, carteiras, proventos, custos e dados de BCB, Tesouro, CVM e SEC para responder perguntas como: quanto dois ETFs se sobrepõem? Quais ETFs têm uma determinada ação? Qual o risco, o retorno e o custo de cada um?",
+        "bullets": [
+          {
+            "label": "Dados",
+            "text": "ingestão diária com agendador, backup com restauração testada e alertas"
+          },
+          {
+            "label": "Analytics",
+            "text": "sobreposição por ativo, emissor e look-through, Stock Locator, retorno, risco, correlação, fundamentos agregados e custos"
+          }
+        ],
+        "steps": [
+          "Dados",
+          "Analytics",
+          "API",
+          "Frontend",
+          "Carteiras",
+          "Produção"
+        ],
+        "note": "Projeto de portfólio, sem fins comerciais. Não é recomendação de investimento."
+      },
+      "en": {
+        "title": "Painel ETF",
+        "tagline": "A research platform for ETFs listed on B3.",
+        "description": "Brings together prices since 2018, holdings, distributions, costs and data from the Central Bank of Brazil, the National Treasury, CVM and the SEC to answer questions like: how much do two ETFs overlap? Which ETFs hold a given stock? What are the risk, return and cost of each one?",
+        "bullets": [
+          {
+            "label": "Data",
+            "text": "scheduled daily ingestion, backups with tested restores and alerting"
+          },
+          {
+            "label": "Analytics",
+            "text": "overlap by asset, issuer and look-through, Stock Locator, return, risk, correlation, aggregated fundamentals and costs"
+          }
+        ],
+        "steps": [
+          "Data",
+          "Analytics",
+          "API",
+          "Frontend",
+          "Portfolios",
+          "Production"
+        ],
+        "note": "Non-commercial portfolio project. Not investment advice."
+      }
+    }
+  ],
+  "backlog": [
+    {
+      "next": true,
+      "pt": {
+        "title": "Focus ao longo do tempo",
+        "description": "Como as expectativas do mercado para IPCA, Selic, PIB e câmbio mudam semana a semana no Relatório Focus."
+      },
+      "en": {
+        "title": "Focus over time",
+        "description": "How market expectations for inflation, the Selic rate, GDP and the dollar change week by week in the Central Bank’s Focus survey."
+      }
+    },
+    {
+      "next": false,
+      "pt": {
+        "title": "Comunicados do Copom",
+        "description": "Cada comunicado comparado com o anterior, palavra por palavra, com a linha do tempo das decisões."
+      },
+      "en": {
+        "title": "Copom statements",
+        "description": "Each Copom statement compared word by word with the previous one, plus a timeline of rate decisions."
+      }
+    },
+    {
+      "next": false,
+      "pt": {
+        "title": "Super Quarta",
+        "description": "Copom e Fed lado a lado: decisões, mudanças nos comunicados e contagem regressiva para as próximas reuniões."
+      },
+      "en": {
+        "title": "Super Wednesday",
+        "description": "Copom and the Fed side by side: decisions, statement changes and a countdown to the next meetings."
+      }
+    },
+    {
+      "next": false,
+      "pt": {
+        "title": "Inflação por item",
+        "description": "O que mais subiu e o que mais caiu em cada divulgação do IPCA, com dados do IBGE."
+      },
+      "en": {
+        "title": "Inflation by item",
+        "description": "What rose and fell the most in each IPCA release, with data from IBGE."
+      }
+    }
+  ]
+}

@@ -99,16 +99,14 @@
         </div>
       </div>
       <div class="projects" tabindex="0" role="region" aria-label="Projetos">
+        <!-- projects:start -->
         <article class="card">
           <div class="card-head">
             <h3>Calcula Lab</h3>
             <span class="tag tag-live">No ar</span>
           </div>
           <p class="card-tagline">Calculadoras que mostram a conta, não só o resultado.</p>
-          <p>
-            Calculadoras práticas para dois nichos: homelab e confeitaria. Você coloca os seus números e cada
-            calculadora mostra a fórmula e as premissas usadas. Sem cadastro, sem cookies e sem nada para vender.
-          </p>
+          <p>Calculadoras práticas para dois nichos: homelab e confeitaria. Você coloca os seus números e cada calculadora mostra a fórmula e as premissas usadas. Sem cadastro, sem cookies e sem nada para vender.</p>
           <ul class="list">
             <li><strong>Homelab:</strong> custo de energia 24 h, dimensionamento de nobreak, capacidade útil de RAID/RAIDZ/SHR, disco para câmeras (DVR/NVR), servidor em casa vs. nuvem</li>
             <li><strong>Confeitaria:</strong> preço de bolo e doce (custo por grama, mão de obra e margem)</li>
@@ -122,10 +120,7 @@
             <span class="tag tag-live">No ar</span>
           </div>
           <p class="card-tagline">Os principais indicadores da economia brasileira num lugar só.</p>
-          <p>
-            Selic, CDI, IPCA, juro real e dólar com dados do Banco Central, atualizados todo dia útil. Cada indicador
-            mostra a conta usada e o código da série de origem.
-          </p>
+          <p>Selic, CDI, IPCA, juro real e dólar com dados do Banco Central, atualizados todo dia útil. Cada indicador mostra a conta usada e o código da série de origem.</p>
           <ul class="list">
             <li><strong>Gráficos:</strong> 1, 2 ou 5 anos, com o valor de cada dia ao passar o mouse</li>
             <li><strong>Dados:</strong> tabela com o fechamento de cada mês</li>
@@ -139,10 +134,7 @@
             <span class="tag tag-live">Open source</span>
           </div>
           <p class="card-tagline">Loja de apps para o Umbrel, o sistema de servidor caseiro.</p>
-          <p>
-            Uma loja comunitária para o umbrelOS com apps que desenvolvi. Basta adicionar a URL do repositório no Umbrel
-            para instalar qualquer um deles com um clique.
-          </p>
+          <p>Uma loja comunitária para o umbrelOS com apps que desenvolvi. Basta adicionar a URL do repositório no Umbrel para instalar qualquer um deles com um clique.</p>
           <ul class="list">
             <li><strong>Claude Server:</strong> roda o Claude Code no servidor e controla tudo pelo navegador, de qualquer dispositivo. As sessões continuam rodando quando você desconecta, como um tmux na web</li>
             <li><strong>Gitea Runner:</strong> runner self-hosted de CI/CD para o Gitea Actions, com várias instâncias, start/stop e logs ao vivo pela interface web</li>
@@ -156,11 +148,7 @@
             <span class="tag tag-wip">Em desenvolvimento</span>
           </div>
           <p class="card-tagline">Plataforma de pesquisa de ETFs listados na B3.</p>
-          <p>
-            Reúne preços desde 2018, carteiras, proventos, custos e dados de BCB, Tesouro, CVM e SEC para responder
-            perguntas como: quanto dois ETFs se sobrepõem? Quais ETFs têm uma determinada ação? Qual o risco, o retorno
-            e o custo de cada um?
-          </p>
+          <p>Reúne preços desde 2018, carteiras, proventos, custos e dados de BCB, Tesouro, CVM e SEC para responder perguntas como: quanto dois ETFs se sobrepõem? Quais ETFs têm uma determinada ação? Qual o risco, o retorno e o custo de cada um?</p>
           <ul class="list">
             <li><strong>Dados:</strong> ingestão diária com agendador, backup com restauração testada e alertas</li>
             <li><strong>Analytics:</strong> sobreposição por ativo, emissor e look-through, Stock Locator, retorno, risco, correlação, fundamentos agregados e custos</li>
@@ -175,29 +163,33 @@
           </div>
           <p class="note">Projeto de portfólio, sem fins comerciais. Não é recomendação de investimento.</p>
         </article>
+
+        <article class="card card-backlog">
+          <div class="card-head">
+            <h3>Na fila</h3>
+          </div>
+          <ul class="backlog-list">
+            <li>
+              <div class="backlog-head"><strong>Focus ao longo do tempo</strong> <span class="tag tag-wip">Próximo</span></div>
+              <p>Como as expectativas do mercado para IPCA, Selic, PIB e câmbio mudam semana a semana no Relatório Focus.</p>
+            </li>
+            <li>
+              <div class="backlog-head"><strong>Comunicados do Copom</strong></div>
+              <p>Cada comunicado comparado com o anterior, palavra por palavra, com a linha do tempo das decisões.</p>
+            </li>
+            <li>
+              <div class="backlog-head"><strong>Super Quarta</strong></div>
+              <p>Copom e Fed lado a lado: decisões, mudanças nos comunicados e contagem regressiva para as próximas reuniões.</p>
+            </li>
+            <li>
+              <div class="backlog-head"><strong>Inflação por item</strong></div>
+              <p>O que mais subiu e o que mais caiu em cada divulgação do IPCA, com dados do IBGE.</p>
+            </li>
+          </ul>
+        </article>
+        <!-- projects:end -->
       </div>
       <div class="carousel-dots" hidden></div>
-      <div class="backlog">
-        <h3 class="backlog-title">Na fila</h3>
-        <ul class="backlog-list">
-          <li>
-            <div class="backlog-head"><strong>Focus ao longo do tempo</strong> <span class="tag tag-wip">Próximo</span></div>
-            <p>Como as expectativas do mercado para IPCA, Selic, PIB e câmbio mudam semana a semana no Relatório Focus.</p>
-          </li>
-          <li>
-            <div class="backlog-head"><strong>Comunicados do Copom</strong></div>
-            <p>Cada comunicado comparado com o anterior, palavra por palavra, com a linha do tempo das decisões.</p>
-          </li>
-          <li>
-            <div class="backlog-head"><strong>Super Quarta</strong></div>
-            <p>Copom e Fed lado a lado: decisões, mudanças nos comunicados e contagem regressiva para as próximas reuniões.</p>
-          </li>
-          <li>
-            <div class="backlog-head"><strong>Inflação por item</strong></div>
-            <p>O que mais subiu e o que mais caiu em cada divulgação do IPCA, com dados do IBGE.</p>
-          </li>
-        </ul>
-      </div>
     </section>
 
 
