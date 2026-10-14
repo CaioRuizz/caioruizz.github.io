@@ -32,13 +32,12 @@ e abra http://localhost:8000.
 
 ## Deploy
 
-Todo push na `main` publica a pasta `site/` no GitHub Pages pelas actions oficiais (`upload-pages-artifact` e
-`deploy-pages`), com o token temporário do próprio workflow; não há secret nem branch `gh-pages`
-(workflow em `.github/workflows/deploy-pages.yml`). Em **Settings → Pages**, a origem é **GitHub Actions** e o
-domínio personalizado é `www.caioruiz.com`.
+O CI/CD roda no Jenkins (http://100.92.14.38:4831, job `github/caioruizz.github.io`), definido no `Jenkinsfile`:
+o Jenkins consulta o GitHub a cada 5 minutos e, a cada commit novo na `main`, roda `scripts/build_projects.py` e
+`scripts/fetch_macro.py` num container descartável e publica a pasta `site/` na branch `gh-pages` (um commit só,
+sem histórico). Em **Settings → Pages**, a origem é a branch `gh-pages` e o domínio personalizado é
+`www.caioruiz.com` (vem de `site/CNAME`).
 
-O deploy também roda em dias úteis às 08:13 e 19:13 (horário de Brasília) para atualizar o painel macro
-(`/macro/`): `scripts/fetch_macro.py` busca as séries no SGS do Banco Central antes de publicar. Esse agendamento
-fica no Jenkins (https://jenkins.caioruiz.com, job `cron-caioruiz-com`), que dispara este workflow por
-`workflow_dispatch`; o agendamento do GitHub Actions atrasava várias horas. Se a API
-falhar, o deploy falha e o site continua com os dados anteriores.
+O job `cron-caioruiz-com` roda o mesmo build em dias úteis às 08:13 e 19:13 (horário de Brasília) para atualizar
+o painel macro (`/macro/`). Se a API do Banco Central falhar, o build falha e o site continua com os dados
+anteriores.
