@@ -4,10 +4,6 @@ on:
   push:
     branches:
       - main
-  schedule:
-    # Painel macro: atualiza os dados do Banco Central em dias úteis, de manhã (CDI do dia anterior)
-    # e à noite (PTAX do dia). Horários em UTC: 08:13 e 19:13 em Brasília.
-    - cron: "13 11,22 * * 1-5"
   workflow_dispatch:
 
 permissions:

@@ -38,5 +38,7 @@ Todo push na `main` publica a pasta `site/` no GitHub Pages pelas actions oficia
 domínio personalizado é `www.caioruiz.com`.
 
 O deploy também roda em dias úteis às 08:13 e 19:13 (horário de Brasília) para atualizar o painel macro
-(`/macro/`): `scripts/fetch_macro.py` busca as séries no SGS do Banco Central antes de publicar. Se a API
+(`/macro/`): `scripts/fetch_macro.py` busca as séries no SGS do Banco Central antes de publicar. Esse agendamento
+fica no Jenkins (https://jenkins.caioruiz.com, job `cron-caioruiz-com`), que dispara este workflow por
+`workflow_dispatch`; o agendamento do GitHub Actions atrasava várias horas. Se a API
 falhar, o deploy falha e o site continua com os dados anteriores.
