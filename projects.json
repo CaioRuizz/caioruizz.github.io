@@ -131,16 +131,20 @@
       "status": "opensource",
       "pt": {
         "title": "Ruiz App Store",
-        "tagline": "Loja de apps para o Umbrel, o sistema de servidor caseiro.",
-        "description": "Uma loja comunitária para o umbrelOS com apps que desenvolvi. Basta adicionar a URL do repositório no Umbrel para instalar qualquer um deles com um clique.",
+        "tagline": "Loja comunitária de apps para o Umbrel, o sistema de servidor caseiro.",
+        "description": "Onde empacoto os apps do meu servidor: dois que desenvolvi e ferramentas open source com as imagens oficiais. Basta adicionar a URL do repositório no Umbrel para instalar.",
         "bullets": [
           {
-            "label": "Claude Server",
-            "text": "roda o Claude Code no servidor e controla tudo pelo navegador, de qualquer dispositivo. As sessões continuam rodando quando você desconecta, como um tmux na web"
+            "label": "Apps próprios",
+            "text": "Claude Server, o Claude Code pelo navegador, e Gitea Runner, runner de CI/CD para o Gitea Actions"
           },
           {
-            "label": "Gitea Runner",
-            "text": "runner self-hosted de CI/CD para o Gitea Actions, com várias instâncias, start/stop e logs ao vivo pela interface web"
+            "label": "Empacotados",
+            "text": "Jenkins e Airflow com as imagens oficiais e um Docker isolado dos outros apps"
+          },
+          {
+            "label": "Na prática",
+            "text": "o Jenkins da loja publica este site e atualiza o Focus e o painel macro todo dia útil"
           }
         ],
         "link": {
@@ -150,16 +154,20 @@
       },
       "en": {
         "title": "Ruiz App Store",
-        "tagline": "An app store for Umbrel, the home server OS.",
-        "description": "A community app store for umbrelOS with apps I built. Add the repository URL in Umbrel and install any of them with one click.",
+        "tagline": "A community app store for Umbrel, the home server OS.",
+        "description": "Where I package the apps for my own server: two I built and open source tools on their official images. Add the repository URL in Umbrel to install them.",
         "bullets": [
           {
-            "label": "Claude Server",
-            "text": "runs Claude Code on your server and lets you drive it from a browser on any device. Sessions keep running when you disconnect, like tmux on the web"
+            "label": "My apps",
+            "text": "Claude Server, Claude Code in the browser, and Gitea Runner, a CI/CD runner for Gitea Actions"
           },
           {
-            "label": "Gitea Runner",
-            "text": "a self-hosted CI/CD runner for Gitea Actions, with multiple instances, start/stop and live logs from a web UI"
+            "label": "Packaged",
+            "text": "Jenkins and Airflow on their official images, with an isolated Docker that cannot touch other apps"
+          },
+          {
+            "label": "In practice",
+            "text": "the store's Jenkins publishes this site and refreshes Focus and the macro dashboard every business day"
           }
         ],
         "link": {
