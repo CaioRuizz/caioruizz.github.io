@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Caio Ruiz — Índices, dados e produtos financeiros</title>
+  <meta name="description" content="Caio Ruiz, Product Analyst no time de Índices da B3. Engenheiro de computação com experiência em pesquisa de produtos, engenharia de software e engenharia de dados.">
+  <meta property="og:title" content="Caio Ruiz">
+  <meta property="og:description" content="Product Analyst no time de Índices da B3. Índices, dados e Python.">
+  <meta property="og:url" content="https://www.caioruiz.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.caioruiz.com/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Caio Ruiz · Product Analyst · B3">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://www.caioruiz.com/">
+  <link rel="alternate" hreflang="pt-BR" href="https://www.caioruiz.com/">
+  <link rel="alternate" hreflang="en" href="https://www.caioruiz.com/en/">
+  <link rel="alternate" hreflang="x-default" href="https://www.caioruiz.com/">
+  <script>
+    // Redireciona para /en/ quem não usa português, a menos que já tenha escolhido o idioma no seletor.
+    (function () {
+      var pref = null;
+      try { pref = localStorage.getItem('lang'); } catch (e) {}
+      if (/bot|crawl|spider|slurp|preview/i.test(navigator.userAgent)) return;
+      var browser = ((navigator.languages && navigator.languages[0]) || navigator.language || '').toLowerCase();
+      var lang = pref || (browser.indexOf('pt') === 0 ? 'pt' : 'en');
+      var anchors = { '#sobre': '#about', '#projetos': '#projects', '#contato': '#contact' };
+      if (lang === 'en') location.replace('en/' + (anchors[location.hash] || ''));
+    })();
+  </script>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="#inicio">caio<span>ruiz</span></a>
+      <nav aria-label="Seções">
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <div class="lang-switch" role="group" aria-label="Idioma">
+        <a href="./" lang="pt-BR" hreflang="pt-BR" data-lang="pt" aria-current="page">PT</a>
+        <a href="en/" lang="en" hreflang="en" data-lang="en" title="English">EN</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero wrap">
+      <p class="eyebrow">Product Analyst · Índices · B3</p>
+      <h1>Olá, eu sou o Caio Ruiz.</h1>
+      <p class="lead">
+        Engenheiro de computação com passagem por engenharia de software e de dados, apaixonado por tecnologia e
+        investimentos.
+      </p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#projetos">Ver projetos</a>
+        <a class="btn" href="mailto:contato@caioruiz.com">contato@caioruiz.com</a>
+      </div>
+    </section>
+
+    <section id="sobre" class="section wrap">
+      <h2>Sobre</h2>
+      <div class="about">
+        <div>
+          <p>
+            Hoje sou Product Analyst na <strong>B3</strong>, onde faço pesquisa e desenvolvimento de índices de ações
+            (amplos e setoriais), de commodities e de moedas, escrevo metodologias, rodo backtests em Python e atendo
+            clientes que pedem índices sob demanda.
+          </p>
+          <p>
+            Fora do trabalho, gosto de construir produtos pequenos e úteis, que você encontra logo abaixo.
+          </p>
+        </div>
+        <dl class="facts">
+          <div><dt>Áreas</dt><dd>Índices, ações, derivativos de ações, commodities e moedas, ETFs, produtos com IA</dd></div>
+          <div><dt>Ferramentas</dt><dd>Python, SQL, Databricks, AWS</dd></div>
+          <div><dt>Formação</dt><dd>Engenharia de Computação, Faculdade Engenheiro Salvador Arena (2019–2024)</dd></div>
+          <div><dt>Idiomas</dt><dd>Português, inglês e espanhol</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section id="projetos" class="section wrap">
+      <div class="section-head">
+        <h2>Projetos</h2>
+        <div class="carousel-arrows" hidden>
+          <button type="button" class="carousel-btn" data-dir="-1" aria-label="Projeto anterior">←</button>
+          <button type="button" class="carousel-btn" data-dir="1" aria-label="Próximo projeto">→</button>
+        </div>
+      </div>
+      <div class="projects" tabindex="0" role="region" aria-label="Projetos">
+        <!-- projects:start -->
+        <article class="card">
+          <div class="card-head">
+            <h3>Focus ao longo do tempo</h3>
+            <span class="tag tag-live">No ar</span>
+          </div>
+          <p class="card-tagline">As expectativas do mercado, semana a semana.</p>
+          <p>O Relatório Focus mostra o que o mercado espera para a economia só na semana atual. Aqui dá para ver como cada expectativa para IPCA, Selic, PIB e câmbio mudou desde a primeira projeção, comparada com o que de fato aconteceu.</p>
+          <ul class="list">
+            <li><strong>Dados:</strong> API de expectativas do Banco Central desde 2012, atualizada todo dia útil</li>
+            <li><strong>Gráficos:</strong> mediana, menor e maior projeção e valor realizado para cada ano</li>
+          </ul>
+          <a class="card-link" href="https://focus.caioruiz.com" target="_blank" rel="noopener">focus.caioruiz.com →</a>
+        </article>
+
+        <article class="card">
+          <div class="card-head">
+            <h3>Painel macro</h3>
+            <span class="tag tag-live">No ar</span>
+          </div>
+          <p class="card-tagline">Os principais indicadores da economia brasileira num lugar só.</p>
+          <p>Selic, CDI, IPCA, juro real e dólar com dados do Banco Central, atualizados todo dia útil. Cada indicador mostra a conta usada e o código da série de origem.</p>
+          <ul class="list">
+            <li><strong>Gráficos:</strong> 1, 2 ou 5 anos, com o valor de cada dia ao passar o mouse</li>
+            <li><strong>Dados:</strong> tabela com o fechamento de cada mês</li>
+          </ul>
+          <a class="card-link" href="macro/">caioruiz.com/macro →</a>
+        </article>
+
+        <article class="card">
+          <div class="card-head">
+            <h3>Calcula Lab</h3>
+            <span class="tag tag-live">No ar</span>
+          </div>
+          <p class="card-tagline">Calculadoras que mostram a conta, não só o resultado.</p>
+          <p>Calculadoras práticas para dois nichos: homelab e confeitaria. Você coloca os seus números e cada calculadora mostra a fórmula e as premissas usadas. Sem cadastro, sem cookies e sem nada para vender.</p>
+          <ul class="list">
+            <li><strong>Homelab:</strong> custo de energia 24 h, dimensionamento de nobreak, capacidade útil de RAID/RAIDZ/SHR, disco para câmeras (DVR/NVR), servidor em casa vs. nuvem</li>
+            <li><strong>Confeitaria:</strong> preço de bolo e doce (custo por grama, mão de obra e margem)</li>
+          </ul>
+          <a class="card-link" href="https://calculalab.com.br" target="_blank" rel="noopener">calculalab.com.br →</a>
+        </article>
+
+        <article class="card">
+          <div class="card-head">
+            <h3>Ruiz App Store</h3>
+            <span class="tag tag-live">Open source</span>
+          </div>
+          <p class="card-tagline">Loja comunitária de apps para o Umbrel, o sistema de servidor caseiro.</p>
+          <p>Onde empacoto os apps do meu servidor: dois que desenvolvi e ferramentas open source com as imagens oficiais. Basta adicionar a URL do repositório no Umbrel para instalar.</p>
+          <ul class="list">
+            <li><strong>Apps próprios:</strong> Claude Server, o Claude Code pelo navegador, e Gitea Runner, runner de CI/CD para o Gitea Actions</li>
+            <li><strong>Empacotados:</strong> Jenkins e Airflow com as imagens oficiais e um Docker isolado dos outros apps</li>
+            <li><strong>Na prática:</strong> o Jenkins da loja publica este site e atualiza o Focus e o painel macro todo dia útil</li>
+          </ul>
+          <a class="card-link" href="https://github.com/CaioRuizz/ruiz-app-store" target="_blank" rel="noopener">github.com/CaioRuizz/ruiz-app-store →</a>
+        </article>
+
+        <article class="card">
+          <div class="card-head">
+            <h3>Painel ETF</h3>
+            <span class="tag tag-wip">Em desenvolvimento</span>
+          </div>
+          <p class="card-tagline">Plataforma de pesquisa de ETFs listados na B3.</p>
+          <p>Reúne preços desde 2018, carteiras, proventos, custos e dados de BCB, Tesouro, CVM e SEC para responder perguntas como: quanto dois ETFs se sobrepõem? Quais ETFs têm uma determinada ação? Qual o risco, o retorno e o custo de cada um?</p>
+          <ul class="list">
+            <li><strong>Dados:</strong> ingestão diária com agendador, backup com restauração testada e alertas</li>
+            <li><strong>Analytics:</strong> sobreposição por ativo, emissor e look-through, Stock Locator, retorno, risco, correlação, fundamentos agregados e custos</li>
+          </ul>
+          <div class="progress" aria-label="Andamento do projeto">
+            <span class="done">Dados</span>
+            <span class="done">Analytics</span>
+            <span class="now">API</span>
+            <span>Frontend</span>
+            <span>Carteiras</span>
+            <span>Produção</span>
+          </div>
+          <p class="note">Projeto de portfólio, sem fins comerciais. Não é recomendação de investimento.</p>
+        </article>
+
+        <article class="card card-backlog">
+          <div class="card-head">
+            <h3>Na fila</h3>
+          </div>
+          <ul class="backlog-list">
+            <li>
+              <div class="backlog-head"><strong>Comunicados do Copom</strong></div>
+              <p>Cada comunicado comparado com o anterior, palavra por palavra, com a linha do tempo das decisões.</p>
+            </li>
+            <li>
+              <div class="backlog-head"><strong>Super Quarta</strong></div>
+              <p>Copom e Fed lado a lado: decisões, mudanças nos comunicados e contagem regressiva para as próximas reuniões.</p>
+            </li>
+            <li>
+              <div class="backlog-head"><strong>Inflação por item</strong></div>
+              <p>O que mais subiu e o que mais caiu em cada divulgação do IPCA, com dados do IBGE.</p>
+            </li>
+          </ul>
+        </article>
+        <!-- projects:end -->
+      </div>
+      <div class="carousel-dots" hidden></div>
+    </section>
+
+
+    <section id="contato" class="section wrap contact">
+      <h2>Contato</h2>
+      <p>Bora tomar um café? Me manda uma mensagem.</p>
+      <ul class="contact-list">
+        <li><span>E-mail</span><a href="mailto:contato@caioruiz.com">contato@caioruiz.com</a></li>
+        <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/caio-henrique-ventura-ruiz" target="_blank" rel="noopener">caio-henrique-ventura-ruiz</a></li>
+        <li><span>GitHub</span><a href="https://github.com/caioruizz" target="_blank" rel="noopener">caioruizz</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <p>© <span id="ano">2026</span> Caio Ruiz · São Paulo, Brasil</p>
+  </footer>
+  <script>document.getElementById('ano').textContent = new Date().getFullYear();</script>
+  <script>
+    document.querySelectorAll('[data-lang]').forEach(function (a) {
+      a.addEventListener('click', function () {
+        try { localStorage.setItem('lang', a.dataset.lang); } catch (e) {}
+      });
+    });
+  </script>
+  <script src="/carousel.js"></script>
+</body>
+</html>

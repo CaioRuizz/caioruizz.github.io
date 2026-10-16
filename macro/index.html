@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Painel macro — Caio Ruiz</title>
+  <meta name="description" content="Selic, CDI, IPCA, juro real e dólar com dados do Banco Central, atualizados todo dia.">
+  <meta property="og:title" content="Painel macro — Caio Ruiz">
+  <meta property="og:description" content="Selic, CDI, IPCA, juro real e dólar com dados do Banco Central, atualizados todo dia.">
+  <meta property="og:url" content="https://www.caioruiz.com/macro/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.caioruiz.com/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://www.caioruiz.com/macro/">
+  <link rel="alternate" hreflang="pt-BR" href="https://www.caioruiz.com/macro/">
+  <link rel="alternate" hreflang="en" href="https://www.caioruiz.com/en/macro/">
+  <link rel="alternate" hreflang="x-default" href="https://www.caioruiz.com/macro/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/macro/macro.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="/">caio<span>ruiz</span></a>
+      <nav aria-label="Seções">
+        <a href="/">Início</a>
+        <a href="/#projetos">Projetos</a>
+      </nav>
+      <div class="lang-switch" role="group" aria-label="Idioma">
+        <a href="/macro/" lang="pt-BR" hreflang="pt-BR" data-lang="pt" aria-current="page">PT</a>
+        <a href="/en/macro/" lang="en" hreflang="en" data-lang="en" title="English">EN</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="macro" class="wrap" data-src="/macro/data.json" style="padding:0">
+    <section class="macro-hero">
+      <p class="eyebrow">Dados do Banco Central · atualizado diariamente</p>
+      <h1>Painel macro</h1>
+      <p class="lead">Os principais indicadores da economia brasileira num lugar só, com a conta de cada um à mostra.</p>
+    </section>
+
+    <div class="macro-controls">
+      <div class="range" role="group" aria-label="Período">
+        <button type="button" data-years="1" aria-pressed="false">1 ano</button>
+        <button type="button" data-years="2" aria-pressed="true">2 anos</button>
+        <button type="button" data-years="5" aria-pressed="false">5 anos</button>
+      </div>
+      <p class="macro-updated"></p>
+    </div>
+
+    <div class="macro-grid" aria-live="polite"></div>
+
+    <details class="macro-table">
+      <summary>Ver os dados em tabela (valor do fim de cada mês)</summary>
+      <div class="table-scroll">
+        <table>
+          <thead><tr></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </details>
+
+    <div class="macro-foot">
+      <p>Fonte: Banco Central do Brasil, Sistema Gerenciador de Séries Temporais (SGS). Os dados são buscados uma vez por dia; feriados e fins de semana não têm cotação.</p>
+      <p>Conteúdo informativo, não é recomendação de investimento.</p>
+    </div>
+  </main>
+
+  <footer class="wrap footer">
+    <p>© <span class="year">2026</span> Caio Ruiz · São Paulo, Brasil</p>
+  </footer>
+  <script>document.querySelector('.year').textContent = new Date().getFullYear();</script>
+  <script>
+    document.querySelectorAll('[data-lang]').forEach(function (a) {
+      a.addEventListener('click', function () {
+        try { localStorage.setItem('lang', a.dataset.lang); } catch (e) {}
+      });
+    });
+  </script>
+  <script src="/macro/macro.js"></script>
+</body>
+</html>
