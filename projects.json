@@ -132,19 +132,19 @@
       "pt": {
         "title": "Ruiz App Store",
         "tagline": "Loja comunitária de apps para o Umbrel, o sistema de servidor caseiro.",
-        "description": "Onde empacoto os apps do meu servidor: dois que desenvolvi e ferramentas open source com as imagens oficiais. Basta adicionar a URL do repositório no Umbrel para instalar.",
+        "description": "A infraestrutura dos meus projetos: CI/CD, pipelines de dados, filas, cache, métricas e segredos. Basta adicionar a URL do repositório no Umbrel para instalar.",
         "bullets": [
           {
             "label": "Apps próprios",
-            "text": "Claude Server, o Claude Code pelo navegador, e Gitea Runner, runner de CI/CD para o Gitea Actions"
+            "text": "Claude Server, Gitea Runner e uma tela no Airflow para gerenciar as origens das DAGs"
           },
           {
             "label": "Empacotados",
-            "text": "Jenkins e Airflow com as imagens oficiais e um Docker isolado dos outros apps"
+            "text": "Jenkins, Airflow, Prometheus, Redis, RabbitMQ e OpenBao, com as imagens oficiais"
           },
           {
             "label": "Na prática",
-            "text": "o Jenkins da loja publica este site e atualiza o Focus e o painel macro todo dia útil"
+            "text": "o Jenkins da loja publica este site e atualiza o Focus e o painel macro"
           }
         ],
         "link": {
@@ -155,19 +155,19 @@
       "en": {
         "title": "Ruiz App Store",
         "tagline": "A community app store for Umbrel, the home server OS.",
-        "description": "Where I package the apps for my own server: two I built and open source tools on their official images. Add the repository URL in Umbrel to install them.",
+        "description": "The infrastructure behind my projects, on my own server: CI/CD, data pipelines, queues, caching, metrics and secrets. Add the repository URL in Umbrel to install.",
         "bullets": [
           {
             "label": "My apps",
-            "text": "Claude Server, Claude Code in the browser, and Gitea Runner, a CI/CD runner for Gitea Actions"
+            "text": "Claude Server, Gitea Runner and an Airflow page to choose where DAGs come from, without editing files"
           },
           {
             "label": "Packaged",
-            "text": "Jenkins and Airflow on their official images, with an isolated Docker that cannot touch other apps"
+            "text": "Jenkins, Airflow, Prometheus, Redis, RabbitMQ and OpenBao, on their official images"
           },
           {
             "label": "In practice",
-            "text": "the store's Jenkins publishes this site and refreshes Focus and the macro dashboard every business day"
+            "text": "the store's Jenkins publishes this site and refreshes Focus and the macro dashboard"
           }
         ],
         "link": {
