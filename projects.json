@@ -1,6 +1,50 @@
 {
   "projects": [
     {
+      "id": "painel-etf",
+      "status": "live",
+      "pt": {
+        "title": "Painel ETF",
+        "tagline": "Pesquisa de ETFs listados na B3.",
+        "description": "Carteira, custos, risco e sobreposição dos ETFs listados na B3, com a fonte e a data de cada número. Os dados são atualizados todo dia útil.",
+        "bullets": [
+          {
+            "label": "Ferramentas",
+            "text": "filtro de ETFs, sobreposição entre dois ETFs, localizador de ativos e carteira consolidada só com ETFs"
+          },
+          {
+            "label": "Dados",
+            "text": "CVM, Banco Central, Tesouro Transparente, SEC EDGAR e B3, com ingestão diária, backup testado e alertas"
+          }
+        ],
+        "link": {
+          "href": "https://paineletf.com.br",
+          "label": "paineletf.com.br"
+        },
+        "note": "Projeto de portfólio, sem fins comerciais. Não é recomendação de investimento."
+      },
+      "en": {
+        "title": "Painel ETF",
+        "tagline": "Research on ETFs listed on B3.",
+        "description": "Holdings, costs, risk and overlap of the ETFs listed on B3, the Brazilian stock exchange, with the source and date of every number. Data is updated every business day. The site is in Portuguese.",
+        "bullets": [
+          {
+            "label": "Tools",
+            "text": "ETF screener, overlap between two ETFs, asset locator and a consolidated ETF-only portfolio"
+          },
+          {
+            "label": "Data",
+            "text": "CVM, Central Bank of Brazil, National Treasury, SEC EDGAR and B3, with daily ingestion, tested backups and alerting"
+          }
+        ],
+        "link": {
+          "href": "https://paineletf.com.br",
+          "label": "paineletf.com.br"
+        },
+        "note": "Non-commercial portfolio project. Not investment advice."
+      }
+    },
+    {
       "id": "focus",
       "status": "live",
       "pt": {
@@ -174,59 +218,6 @@
           "href": "https://github.com/CaioRuizz/ruiz-app-store",
           "label": "github.com/CaioRuizz/ruiz-app-store"
         }
-      }
-    },
-    {
-      "id": "painel-etf",
-      "status": "wip",
-      "progress_done": 2,
-      "pt": {
-        "title": "Painel ETF",
-        "tagline": "Plataforma de pesquisa de ETFs listados na B3.",
-        "description": "Reúne preços desde 2018, carteiras, proventos, custos e dados de BCB, Tesouro, CVM e SEC para responder perguntas como: quanto dois ETFs se sobrepõem? Quais ETFs têm uma determinada ação? Qual o risco, o retorno e o custo de cada um?",
-        "bullets": [
-          {
-            "label": "Dados",
-            "text": "ingestão diária com agendador, backup com restauração testada e alertas"
-          },
-          {
-            "label": "Analytics",
-            "text": "sobreposição por ativo, emissor e look-through, Stock Locator, retorno, risco, correlação, fundamentos agregados e custos"
-          }
-        ],
-        "steps": [
-          "Dados",
-          "Analytics",
-          "API",
-          "Frontend",
-          "Carteiras",
-          "Produção"
-        ],
-        "note": "Projeto de portfólio, sem fins comerciais. Não é recomendação de investimento."
-      },
-      "en": {
-        "title": "Painel ETF",
-        "tagline": "A research platform for ETFs listed on B3.",
-        "description": "Brings together prices since 2018, holdings, distributions, costs and data from the Central Bank of Brazil, the National Treasury, CVM and the SEC to answer questions like: how much do two ETFs overlap? Which ETFs hold a given stock? What are the risk, return and cost of each one?",
-        "bullets": [
-          {
-            "label": "Data",
-            "text": "scheduled daily ingestion, backups with tested restores and alerting"
-          },
-          {
-            "label": "Analytics",
-            "text": "overlap by asset, issuer and look-through, Stock Locator, return, risk, correlation, aggregated fundamentals and costs"
-          }
-        ],
-        "steps": [
-          "Data",
-          "Analytics",
-          "API",
-          "Frontend",
-          "Portfolios",
-          "Production"
-        ],
-        "note": "Non-commercial portfolio project. Not investment advice."
       }
     }
   ],
