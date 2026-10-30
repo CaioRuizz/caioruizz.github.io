@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Caio Ruiz — Indices, data and financial products</title>
+  <meta name="description" content="Caio Ruiz, Product Analyst on the Indices team at B3, the Brazilian stock exchange. Computer engineer with a background in product research, software engineering and data engineering.">
+  <meta property="og:title" content="Caio Ruiz">
+  <meta property="og:description" content="Product Analyst on the Indices team at B3. Indices, data and Python.">
+  <meta property="og:url" content="https://www.caioruiz.com/en/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.caioruiz.com/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Caio Ruiz · Product Analyst · B3">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="pt_BR">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://www.caioruiz.com/en/">
+  <link rel="alternate" hreflang="pt-BR" href="https://www.caioruiz.com/">
+  <link rel="alternate" hreflang="en" href="https://www.caioruiz.com/en/">
+  <link rel="alternate" hreflang="x-default" href="https://www.caioruiz.com/">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="#home">caio<span>ruiz</span></a>
+      <nav aria-label="Sections">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <a href="../" lang="pt-BR" hreflang="pt-BR" data-lang="pt" title="Português">PT</a>
+        <a href="./" lang="en" hreflang="en" data-lang="en" aria-current="page">EN</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero wrap">
+      <p class="eyebrow">Product Analyst · Indices · B3</p>
+      <h1>Hi, I'm Caio Ruiz.</h1>
+      <p class="lead">
+        Computer engineer with a background in software and data engineering, passionate about technology and
+        investing.
+      </p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#projects">See projects</a>
+        <a class="btn" href="mailto:contato@caioruiz.com">contato@caioruiz.com</a>
+      </div>
+    </section>
+
+    <section id="about" class="section wrap">
+      <h2>About</h2>
+      <div class="about">
+        <div>
+          <p>
+            I'm a Product Analyst at <strong>B3</strong>, where I research and develop stock indices (broad and
+            sectoral), commodity indices and currency indices, write methodologies, run backtests in Python and work
+            with clients who request custom indices.
+          </p>
+          <p>
+            Outside of work, I like building small, useful products, which you'll find below.
+          </p>
+        </div>
+        <dl class="facts">
+          <div><dt>Areas</dt><dd>Indices, stocks, stock derivatives, commodities and currencies, ETFs, AI products</dd></div>
+          <div><dt>Tools</dt><dd>Python, SQL, Databricks, AWS</dd></div>
+          <div><dt>Education</dt><dd>B.Sc. in Computer Engineering, Faculdade Engenheiro Salvador Arena (2019–2024)</dd></div>
+          <div><dt>Languages</dt><dd>Portuguese, English and Spanish</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section id="projects" class="section wrap">
+      <div class="section-head">
+        <h2>Projects</h2>
+        <div class="carousel-arrows" hidden>
+          <button type="button" class="carousel-btn" data-dir="-1" aria-label="Previous project">←</button>
+          <button type="button" class="carousel-btn" data-dir="1" aria-label="Next project">→</button>
+        </div>
+      </div>
+      <div class="projects" tabindex="0" role="region" aria-label="Projects">
+        <!-- projects:start -->
+        <article class="card">
+          <div class="card-head">
+            <h3>Painel ETF</h3>
+            <span class="tag tag-live">Live</span>
+          </div>
+          <p class="card-tagline">Research on ETFs listed on B3.</p>
+          <p>Holdings, costs, risk and overlap of the ETFs listed on B3, the Brazilian stock exchange, with the source and date of every number. Data is updated every business day. The site is in Portuguese.</p>
+          <ul class="list">
+            <li><strong>Tools:</strong> ETF screener, overlap between two ETFs, asset locator and a consolidated ETF-only portfolio</li>
+            <li><strong>Data:</strong> CVM, Central Bank of Brazil, National Treasury, SEC EDGAR and B3, with daily ingestion, tested backups and alerting</li>
+          </ul>
+          <a class="card-link" href="https://paineletf.com.br" target="_blank" rel="noopener">paineletf.com.br →</a>
+          <p class="note">Non-commercial portfolio project. Not investment advice.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-head">
+            <h3>Focus over time</h3>
+            <span class="tag tag-live">Live</span>
+          </div>
+          <p class="card-tagline">Market expectations, week by week.</p>
+          <p>The Central Bank’s Focus survey only shows this week’s market expectations. This site shows how each forecast for inflation, the Selic rate, GDP and the dollar changed since the first projection, compared with what actually happened. The site is in Portuguese.</p>
+          <ul class="list">
+            <li><strong>Data:</strong> Central Bank expectations API since 2012, updated every business day</li>
+            <li><strong>Charts:</strong> median, lowest and highest forecast and the realized value for each year</li>
+          </ul>
+          <a class="card-link" href="https://focus.caioruiz.com" target="_blank" rel="noopener">focus.caioruiz.com →</a>
+        </article>
+
+        <article class="card">
+          <div class="card-head">
+            <h3>Brazil macro dashboard</h3>
+            <span class="tag tag-live">Live</span>
+          </div>
+          <p class="card-tagline">The main indicators of the Brazilian economy in one place.</p>
+          <p>Selic, CDI, IPCA, real interest rate and the dollar, with Central Bank of Brazil data updated every business day. Each indicator shows the math behind it and its source series.</p>
+          <ul class="list">
+            <li><strong>Charts:</strong> 1, 2 or 5 years, with each day&#x27;s value on hover</li>
+            <li><strong>Data:</strong> a table with month-end values</li>
+          </ul>
+          <a class="card-link" href="macro/">caioruiz.com/en/macro →</a>
+        </article>
+
+        <article class="card">
+          <div class="card-head">
+            <h3>Calcula Lab</h3>
+            <span class="tag tag-live">Live</span>
+          </div>
+          <p class="card-tagline">Calculators that show the math, not just the result.</p>
+          <p>Practical calculators for two niches: homelab and baking. You enter your own numbers and each calculator shows the formula and assumptions behind the result. No sign-up, no cookies and nothing to sell. The site is in Portuguese.</p>
+          <ul class="list">
+            <li><strong>Homelab:</strong> 24/7 power cost, UPS sizing, usable RAID/RAIDZ/SHR capacity, storage for security cameras (DVR/NVR), home server vs. cloud</li>
+            <li><strong>Baking:</strong> cake and pastry pricing (cost per gram, labor and margin)</li>
+          </ul>
+          <a class="card-link" href="https://calculalab.com.br" target="_blank" rel="noopener">calculalab.com.br →</a>
+        </article>
+
+        <article class="card">
+          <div class="card-head">
+            <h3>Ruiz App Store</h3>
+            <span class="tag tag-live">Open source</span>
+          </div>
+          <p class="card-tagline">A community app store for Umbrel, the home server OS.</p>
+          <p>The infrastructure behind my projects, on my own server: CI/CD, data pipelines, queues, caching, metrics and secrets. Add the repository URL in Umbrel to install.</p>
+          <ul class="list">
+            <li><strong>My apps:</strong> Claude Server, Gitea Runner and an Airflow page to choose where DAGs come from, without editing files</li>
+            <li><strong>Packaged:</strong> Jenkins, Airflow, Prometheus, Redis, RabbitMQ and OpenBao, on their official images</li>
+            <li><strong>In practice:</strong> the store&#x27;s Jenkins publishes this site and refreshes Focus and the macro dashboard</li>
+          </ul>
+          <a class="card-link" href="https://github.com/CaioRuizz/ruiz-app-store" target="_blank" rel="noopener">github.com/CaioRuizz/ruiz-app-store →</a>
+        </article>
+
+        <article class="card card-backlog">
+          <div class="card-head">
+            <h3>Up next</h3>
+          </div>
+          <ul class="backlog-list">
+            <li>
+              <div class="backlog-head"><strong>Copom statements</strong></div>
+              <p>Each Copom statement compared word by word with the previous one, plus a timeline of rate decisions.</p>
+            </li>
+            <li>
+              <div class="backlog-head"><strong>Super Wednesday</strong></div>
+              <p>Copom and the Fed side by side: decisions, statement changes and a countdown to the next meetings.</p>
+            </li>
+            <li>
+              <div class="backlog-head"><strong>Inflation by item</strong></div>
+              <p>What rose and fell the most in each IPCA release, with data from IBGE.</p>
+            </li>
+          </ul>
+        </article>
+        <!-- projects:end -->
+      </div>
+      <div class="carousel-dots" hidden></div>
+    </section>
+
+    <section id="contact" class="section wrap contact">
+      <h2>Contact</h2>
+      <p>Up for a coffee? Send me a message.</p>
+      <ul class="contact-list">
+        <li><span>Email</span><a href="mailto:contato@caioruiz.com">contato@caioruiz.com</a></li>
+        <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/caio-henrique-ventura-ruiz" target="_blank" rel="noopener">caio-henrique-ventura-ruiz</a></li>
+        <li><span>GitHub</span><a href="https://github.com/caioruizz" target="_blank" rel="noopener">caioruizz</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <p>© <span id="year">2026</span> Caio Ruiz · São Paulo, Brazil</p>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script>
+    document.querySelectorAll('[data-lang]').forEach(function (a) {
+      a.addEventListener('click', function () {
+        try { localStorage.setItem('lang', a.dataset.lang); } catch (e) {}
+      });
+    });
+  </script>
+  <script src="/carousel.js"></script>
+</body>
+</html>
