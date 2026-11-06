@@ -1,0 +1,68 @@
+:root { --chart: #00876c; --chart-wash: rgba(0, 135, 108, .10); --grid: #ece9e2; }
+@media (prefers-color-scheme: dark) {
+  :root { --chart: #22a888; --chart-wash: rgba(34, 168, 136, .12); --grid: #262a32; }
+}
+
+.macro-hero { padding: 64px 20px 8px; }
+.macro-hero .lead { margin-bottom: 0; }
+
+.macro-controls {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px;
+  padding: 28px 20px 20px;
+}
+.range { display: inline-flex; padding: 3px; gap: 2px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); }
+.range button {
+  font: 500 13px/1 "JetBrains Mono", ui-monospace, monospace; color: var(--muted);
+  background: none; border: 0; border-radius: 999px; padding: 7px 14px; cursor: pointer;
+}
+.range button:hover { color: var(--text); }
+.range button[aria-pressed="true"] { background: var(--accent); color: var(--bg); }
+.range button:focus-visible, .macro-chart svg:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.macro-updated { margin: 0; font-size: 13px; color: var(--muted); }
+
+.macro-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; padding: 0 20px; }
+.macro-card { padding: 22px 22px 18px; }
+.macro-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+.macro-label { font: 600 15px Inter, system-ui, sans-serif; letter-spacing: 0; text-transform: none; color: var(--text); margin: 0; }
+.macro-date { font-size: 13px; color: var(--muted); white-space: nowrap; }
+.macro-value { font-size: 34px; font-weight: 600; letter-spacing: -.02em; line-height: 1.15; margin: 6px 0 2px !important; }
+.macro-delta { font-size: 14px; color: var(--muted); margin: 0 0 10px !important; }
+.macro-note { font-size: 13px; color: var(--muted); margin: 10px 0 0 !important; }
+.macro-src { font-family: "JetBrains Mono", ui-monospace, monospace; font-size: 12px; white-space: nowrap; }
+.macro-error { grid-column: 1 / -1; color: var(--muted); }
+
+.macro-chart { position: relative; min-height: 150px; }
+.macro-chart svg { display: block; width: 100%; height: auto; touch-action: pan-y; }
+.macro-chart .grid { stroke: var(--grid); stroke-width: 1; }
+.macro-chart .zero { stroke: var(--muted); stroke-width: 1; opacity: .6; }
+.macro-chart .tick { fill: var(--muted); font: 11px Inter, system-ui, sans-serif; font-variant-numeric: tabular-nums; }
+.macro-chart .line { fill: none; stroke: var(--chart); stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+.macro-chart .area { fill: var(--chart-wash); stroke: none; }
+.macro-chart .dot { fill: var(--chart); stroke: var(--surface); stroke-width: 2; }
+.macro-chart .cross { stroke: var(--muted); stroke-width: 1; }
+.macro-tip {
+  position: absolute; top: -6px; pointer-events: none;
+  background: var(--surface); border: 1px solid var(--line); border-radius: 8px;
+  padding: 4px 8px; font-size: 12px; white-space: nowrap; box-shadow: 0 2px 8px rgba(0, 0, 0, .08);
+}
+.macro-tip strong { font-size: 14px; margin-right: 6px; }
+.macro-tip span { color: var(--muted); }
+
+.macro-table { padding: 28px 20px 8px; }
+.macro-table summary { cursor: pointer; color: var(--accent); font-weight: 500; }
+.table-scroll { overflow-x: auto; margin-top: 14px; }
+.macro-table table { border-collapse: collapse; font-size: 14px; min-width: 560px; width: 100%; }
+.macro-table th, .macro-table td { padding: 6px 10px; text-align: right; border-bottom: 1px solid var(--line); white-space: nowrap; }
+.macro-table td { font-variant-numeric: tabular-nums; }
+.macro-table th:first-child { text-align: left; font-weight: 500; }
+.macro-table thead th { color: var(--muted); font-weight: 600; font-size: 13px; }
+
+.macro-foot { padding: 20px 20px 48px; font-size: 13px; color: var(--muted); }
+.macro-foot p { margin: 0 0 6px; }
+
+@media (max-width: 760px) {
+  .macro-hero { padding: 44px 16px 4px; }
+  .macro-controls, .macro-table, .macro-foot { padding-left: 16px; padding-right: 16px; }
+  .macro-grid { grid-template-columns: 1fr; padding: 0 16px; gap: 16px; }
+}
+.macro-card:last-child:nth-child(odd) { grid-column: 1 / -1; }
